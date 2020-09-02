@@ -1,0 +1,156 @@
+.boxes {
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  justify-items: center;
+  align-items: center;
+
+  &__box {
+    height: 70%;
+    width: 70%;
+    background-color: $color-grey-light-1;
+    border-radius: 0.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      background-color: $color-grey-light-1;
+      border-radius: 0.5rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    &--1 {
+      grid-row: 1 / 3;
+      grid-column: 6 / 8;
+
+      animation: scalingBox 0.5s ease-out 1s, enterTopBox 0.5s ease-out 0.5s;
+      animation-fill-mode: backwards;
+
+      &::after {
+        animation: scalingPseudoBox 0.5s ease-out 1.5s;
+      }
+    }
+
+    &--2 {
+      grid-row: 6 / 8;
+      grid-column: 1 / 3;
+
+      animation: scalingBox 0.5s ease-out 2s, enterLeftBox 0.5s ease-out 1.5s;
+      animation-fill-mode: backwards;
+
+      &::after {
+        animation: scalingPseudoBox 0.5s ease-out 2.5s;
+      }
+    }
+
+    &--3 {
+      grid-row: 6 / 8;
+      grid-column: 11 / 13;
+
+      animation: scalingBox 0.5s ease-out 3s, enterRightBox 0.5s ease-out 2.5s;
+      animation-fill-mode: backwards;
+
+      &::after {
+        animation: scalingPseudoBox 0.5s ease-out 3.5s;
+      }
+    }
+
+    &--4 {
+      grid-row: 11 / 13;
+      grid-column: 6 / 8;
+
+      animation: scalingBox 0.5s ease-out 4s, enterBottomBox 0.5s ease-out 3.5s;
+      animation-fill-mode: backwards;
+
+      &::after {
+        animation: scalingPseudoBox 0.5s ease-out 4.5s;
+      }
+    }
+  }
+}
+
+@keyframes scalingBox {
+  0% {
+    transform: scale(1.2);
+  }
+
+  80% {
+    transform: scale(1.4);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes scalingPseudoBox {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+@keyframes enterTopBox {
+  0% {
+    opacity: 0;
+    transform: scale(1.2) translateY(-2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1.2) translate(0);
+  }
+}
+
+@keyframes enterLeftBox {
+  0% {
+    opacity: 0;
+    transform: scale(1.2) translateX(-2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1.2) translate(0);
+  }
+}
+
+@keyframes enterRightBox {
+  0% {
+    opacity: 0;
+    transform: scale(1.2) translateX(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1.2) translate(0);
+  }
+}
+
+@keyframes enterBottomBox {
+  0% {
+    opacity: 0;
+    transform: scale(1.2) translateY(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1.2) translate(0);
+  }
+}
