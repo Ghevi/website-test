@@ -3,6 +3,7 @@
   letter-spacing: .3rem;
   text-transform: uppercase;
   font-weight: 400;
+  color: $color-primary;
 
   &--horizontal {
   }
@@ -10,4 +11,12 @@
   &--vertical {
   
   }
+}
+
+.heading-4 {
+  font-size: 2rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: $color-primary;
 }
