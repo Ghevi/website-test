@@ -19,8 +19,10 @@
     grid-row: 4 / 5;
     grid-column: 6 / 8;
 
+    opacity: 0.85;
+
     transform: skewX(-12deg);
-    animation: bounceProjects 5s ease-out 7s;
+    animation: fadeInProjects 0.5s ease-out 7.5s;
     animation-fill-mode: backwards;
   }
   // PROJECTS HEADING
@@ -30,8 +32,10 @@
     grid-row: 9 / 10;
     grid-column: 6 / 8;
 
+    opacity: 0.85;
+
     transform: skewX(12deg);
-    animation: bounceSkills 5s ease-out 7.2s;
+    animation: fadeInSkills 0.5s ease-out 7.9s;
     animation-fill-mode: backwards;
   }
   // SKILLS HEADING
@@ -43,6 +47,7 @@
     background-color: rgba($color-grey-light-1, 0.9);
     border-radius: 0.5rem;
     border: 2px solid $color-primary;
+    opacity: 0.85;
 
     display: flex;
     justify-content: center;
@@ -140,6 +145,7 @@
     text-decoration: none;
     border: 1px solid $color-secondary;
     border-radius: 0.5rem;
+    opacity: 0.85;
 
     display: flex;
     justify-content: center;
@@ -330,7 +336,7 @@
   }
 
   100% {
-    opacity: 1;
+    opacity: 0.85;
     transform: scale(1.2) translate(0);
   }
 }
@@ -342,7 +348,7 @@
   }
 
   100% {
-    opacity: 1;
+    opacity: 0.85;
     transform: scale(1.2) translate(0);
   }
 }
@@ -354,7 +360,7 @@
   }
 
   100% {
-    opacity: 1;
+    opacity: 0.85;
     transform: scale(1.2) translate(0);
   }
 }
@@ -366,7 +372,7 @@
   }
 
   100% {
-    opacity: 1;
+    opacity: 0.85;
     transform: scale(1.2) translate(0);
   }
 }
@@ -384,7 +390,7 @@
   }
 
   100% {
-    opacity: 1;
+    opacity: 0.85;
     transform: translateY(0);
   }
 }
@@ -400,7 +406,7 @@
   }
 
   100% {
-    opacity: 1;
+    opacity: 0.85;
     transform: translateY(0);
   }
 }
@@ -416,7 +422,7 @@
   }
 
   100% {
-    opacity: 1;
+    opacity: 0.85;
     transform: translateY(0);
   }
 }
@@ -432,7 +438,7 @@
   }
 
   100% {
-    opacity: 1;
+    opacity: 0.85;
     transform: translateY(0);
   }
 }
@@ -553,6 +559,30 @@
     height: 60%;
     transform: translateY(3rem) skewX(12deg);
   }
+  100% {
+    opacity: 1;
+    transform: translateY(0) skewX(12deg);
+  }
+}
+
+@keyframes fadeInProjects {
+  0% {
+    opacity: 0;
+    transform: translateY(-5rem) skewX(-12deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) skewX(-12deg);
+  }
+}
+
+@keyframes fadeInSkills {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem) skewX(12deg);
+  }
+
   100% {
     opacity: 1;
     transform: translateY(0) skewX(12deg);

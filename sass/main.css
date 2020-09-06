@@ -66,10 +66,11 @@ body {
   -ms-grid-column: 6;
   -ms-grid-column-span: 2;
   grid-column: 6 / 8;
+  opacity: 0.85;
   -webkit-transform: skewX(-12deg);
           transform: skewX(-12deg);
-  -webkit-animation: bounceProjects 5s ease-out 7s;
-          animation: bounceProjects 5s ease-out 7s;
+  -webkit-animation: fadeInProjects 0.5s ease-out 7.5s;
+          animation: fadeInProjects 0.5s ease-out 7.5s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
@@ -81,10 +82,11 @@ body {
   -ms-grid-column: 6;
   -ms-grid-column-span: 2;
   grid-column: 6 / 8;
+  opacity: 0.85;
   -webkit-transform: skewX(12deg);
           transform: skewX(12deg);
-  -webkit-animation: bounceSkills 5s ease-out 7.2s;
-          animation: bounceSkills 5s ease-out 7.2s;
+  -webkit-animation: fadeInSkills 0.5s ease-out 7.9s;
+          animation: fadeInSkills 0.5s ease-out 7.9s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
@@ -95,6 +97,7 @@ body {
   background-color: rgba(249, 247, 246, 0.9);
   border-radius: 0.5rem;
   border: 2px solid #c69963;
+  opacity: 0.85;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,6 +220,7 @@ body {
   text-decoration: none;
   border: 1px solid #101d2c;
   border-radius: 0.5rem;
+  opacity: 0.85;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -491,7 +495,7 @@ body {
             transform: scale(1.2) translateY(-2rem);
   }
   100% {
-    opacity: 1;
+    opacity: 0.85;
     -webkit-transform: scale(1.2) translate(0);
             transform: scale(1.2) translate(0);
   }
@@ -504,7 +508,7 @@ body {
             transform: scale(1.2) translateY(-2rem);
   }
   100% {
-    opacity: 1;
+    opacity: 0.85;
     -webkit-transform: scale(1.2) translate(0);
             transform: scale(1.2) translate(0);
   }
@@ -517,7 +521,7 @@ body {
             transform: scale(1.2) translateX(-2rem);
   }
   100% {
-    opacity: 1;
+    opacity: 0.85;
     -webkit-transform: scale(1.2) translate(0);
             transform: scale(1.2) translate(0);
   }
@@ -530,7 +534,7 @@ body {
             transform: scale(1.2) translateX(-2rem);
   }
   100% {
-    opacity: 1;
+    opacity: 0.85;
     -webkit-transform: scale(1.2) translate(0);
             transform: scale(1.2) translate(0);
   }
@@ -543,7 +547,7 @@ body {
             transform: scale(1.2) translateX(2rem);
   }
   100% {
-    opacity: 1;
+    opacity: 0.85;
     -webkit-transform: scale(1.2) translate(0);
             transform: scale(1.2) translate(0);
   }
@@ -556,7 +560,7 @@ body {
             transform: scale(1.2) translateX(2rem);
   }
   100% {
-    opacity: 1;
+    opacity: 0.85;
     -webkit-transform: scale(1.2) translate(0);
             transform: scale(1.2) translate(0);
   }
@@ -569,7 +573,7 @@ body {
             transform: scale(1.2) translateY(2rem);
   }
   100% {
-    opacity: 1;
+    opacity: 0.85;
     -webkit-transform: scale(1.2) translate(0);
             transform: scale(1.2) translate(0);
   }
@@ -582,7 +586,7 @@ body {
             transform: scale(1.2) translateY(2rem);
   }
   100% {
-    opacity: 1;
+    opacity: 0.85;
     -webkit-transform: scale(1.2) translate(0);
             transform: scale(1.2) translate(0);
   }
@@ -599,7 +603,7 @@ body {
             transform: translateY(4rem) translateX(4rem);
   }
   100% {
-    opacity: 1;
+    opacity: 0.85;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
@@ -616,7 +620,7 @@ body {
             transform: translateY(4rem) translateX(4rem);
   }
   100% {
-    opacity: 1;
+    opacity: 0.85;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
@@ -633,7 +637,7 @@ body {
             transform: translateY(4rem) translateX(-4rem);
   }
   100% {
-    opacity: 1;
+    opacity: 0.85;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
@@ -650,7 +654,7 @@ body {
             transform: translateY(4rem) translateX(-4rem);
   }
   100% {
-    opacity: 1;
+    opacity: 0.85;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
@@ -667,7 +671,7 @@ body {
             transform: translateY(-4rem) translateX(4rem);
   }
   100% {
-    opacity: 1;
+    opacity: 0.85;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
@@ -684,7 +688,7 @@ body {
             transform: translateY(-4rem) translateX(4rem);
   }
   100% {
-    opacity: 1;
+    opacity: 0.85;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
@@ -701,7 +705,7 @@ body {
             transform: translateY(-4rem) translateX(-4rem);
   }
   100% {
-    opacity: 1;
+    opacity: 0.85;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
@@ -718,7 +722,7 @@ body {
             transform: translateY(-4rem) translateX(-4rem);
   }
   100% {
-    opacity: 1;
+    opacity: 0.85;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
@@ -1012,6 +1016,58 @@ body {
     height: 60%;
     -webkit-transform: translateY(3rem) skewX(12deg);
             transform: translateY(3rem) skewX(12deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0) skewX(12deg);
+            transform: translateY(0) skewX(12deg);
+  }
+}
+
+@-webkit-keyframes fadeInProjects {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-5rem) skewX(-12deg);
+            transform: translateY(-5rem) skewX(-12deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0) skewX(-12deg);
+            transform: translateY(0) skewX(-12deg);
+  }
+}
+
+@keyframes fadeInProjects {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-5rem) skewX(-12deg);
+            transform: translateY(-5rem) skewX(-12deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0) skewX(-12deg);
+            transform: translateY(0) skewX(-12deg);
+  }
+}
+
+@-webkit-keyframes fadeInSkills {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(5rem) skewX(12deg);
+            transform: translateY(5rem) skewX(12deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0) skewX(12deg);
+            transform: translateY(0) skewX(12deg);
+  }
+}
+
+@keyframes fadeInSkills {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(5rem) skewX(12deg);
+            transform: translateY(5rem) skewX(12deg);
   }
   100% {
     opacity: 1;
